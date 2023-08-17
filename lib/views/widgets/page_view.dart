@@ -13,6 +13,13 @@ class PageViewFile extends ConsumerStatefulWidget {
 }
 
 class _PageViewFileState extends ConsumerState<PageViewFile> {
+  late final PageController pageController;
+  @override
+  void initState() {
+    super.initState();
+    pageController = PageController();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -20,6 +27,7 @@ class _PageViewFileState extends ConsumerState<PageViewFile> {
       child: Stack(
         children: [
           PageView(
+            controller: pageController,
             onPageChanged: (value) =>
                 {ref.read(indexProvider.notifier).update((state) => value)},
             children: const [
