@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:suvayetask/views/widgets/grid_box.dart';
 import 'package:suvayetask/views/widgets/page_view.dart';
 import 'package:suvayetask/views/widgets/row_dots.dart';
+import '../Controller/Providers/nav_index_provider.dart';
 import '../constants/constants.dart';
 
 class MainView extends StatelessWidget {
@@ -264,8 +265,4 @@ class MainView extends StatelessWidget {
   }
 }
 
-final navigationIndexProvider = StateProvider<int>(
-  (ref) {
-    return 1;
-  },
-);
+

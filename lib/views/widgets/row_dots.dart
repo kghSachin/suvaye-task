@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:suvayetask/constants/constants.dart';
 
+import '../../Controller/Providers/index_provider.dart';
+
 class RowDots extends ConsumerWidget {
   const RowDots({super.key});
 
@@ -54,7 +56,3 @@ class RowDots extends ConsumerWidget {
     );
   }
 }
-
-final indexProvider = StateProvider<int>((ref) {
-  return 0;
-});

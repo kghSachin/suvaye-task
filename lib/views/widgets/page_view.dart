@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:suvayetask/constants/constants.dart';
 import 'package:suvayetask/views/widgets/page_view_container.dart';
-import 'package:suvayetask/views/widgets/row_dots.dart';
+
+import '../../Controller/Providers/index_provider.dart';
 
 class PageViewFile extends ConsumerStatefulWidget {
   const PageViewFile({super.key});
